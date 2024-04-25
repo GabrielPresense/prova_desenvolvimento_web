@@ -3,34 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Municípios do Brasil</title>
-
+    <title>Municipios</title>
     <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Municípios do Brasil</h1>
+        <h1 id="title">Municipios de </h1>
+        <a href="../index.html">Ir para Home</a>
+        <a href="/favoritos/index.html">Ver Favoritos</a>
     </header>
-
-    <nav aria-label="Navegação principal">
-        <ul>
-          <li><a href="./favoritos/index.html">Ver Favoritos</a></li>
-        </ul>
-      </nav>
-
     <main>
-        <section>
-            <ul id="lista-municipios" aria-label="Lista de Municípios"></ul>
-        </section>
+        <ul id="cities-list"></ul>
     </main>
-
     <footer>
-        <p>
-            © 2024 Prova de Programação Web
-        </p>
+        <p>&copy; 2024 Prova de Programação Web</p> 
     </footer>
-
-    <script src="./js/estados.js"></script>
-
 </body>
+<script src="script.js">
+</script>
 </html>

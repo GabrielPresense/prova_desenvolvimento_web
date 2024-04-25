@@ -1,87 +1,79 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body {
+  font-family: Arial, Helvetica, sans-serif;
   display: grid;
   grid-template-rows: auto 1fr auto;
-  height: 100vh;
-  font-family: "Arial", sans-serif;
+  min-height: 100vh;
 }
 
 header {
+  padding: 1.5rem;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  color: white;
   background-color: #0074d9;
-  color: #fff;
-  padding: 20px;
-}
-
-header h1 {
-  font-size: 24px;
-}
-
-nav ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   align-items: center;
-  background-color: #0074d9;
-  padding: 10px;
-  margin-bottom: 20px;
-  list-style: none;
-}
-
-nav a {
-  text-decoration: none;
-  color: #fff;
-  font-weight: bold;
-}
-
-nav a:hover {
-  color: #ffc107;
-  transition: color 1s ease;
-}
-
-main section {
-  display: flex;
   justify-content: center;
-  align-items: center;
-  padding: 20px;
-}
-
-#lista-estados a {
-  text-decoration: none;
-  color: inherit;
-}
-
-ul {
-  display: flex;
   flex-direction: column;
-  align-items: center;
-  list-style-type: none;
+  gap: 1rem;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+main ul li {
+  list-style: none;
+  margin: 1rem 0 1rem 0;
+}
+
+main ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+main ul li a:hover {
+  transition: ease-in-out 0.1s;
+  opacity: 0.8;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
 }
 
 footer {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 20px;
+  color: white;
+  padding: 2rem;
   background-color: #333;
-  color: #fff;
-  gap: 12px;
+  align-items: center;
+  justify-content: center;
 }
 
-footer a {
-  color: #ffc107;
-  text-decoration: none;
+/*Municipio*/
+main ul li {
+  display: flex;
+  align-items: center;
+  text-align: center;    
+  justify-content: center;
+  gap: 1rem;
 }
 
-footer a:hover {
+.fav-button {
+  background-color: #ff4136;
+  color: white;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  border: 0;
+  cursor: pointer;
+}
+
+main ul li button:hover {
+  transition: ease-in-out 0.1s;
   opacity: 0.8;
-  transition: opacity 0.5s;
 }
